@@ -19,7 +19,7 @@ function Greetings(props)  {
 		}
 	}
 
-	return (<p>{greet(lang)} {children}</p>)
+	return (<p className="card-user" >{greet(lang)} {children}</p>)
 }
 
 export default Greetings;

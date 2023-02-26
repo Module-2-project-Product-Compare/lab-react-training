@@ -1,6 +1,7 @@
 import IdCard from './components/IdCard';
 import './App.css';
 import Grettings from './components/Greetings';
+import Random from './components/Random';
 
 const userIdCard = [
   {
@@ -31,10 +32,13 @@ function App() {
         )
       })}
 
-      <Grettings lang="de">Ludwig</Grettings>
+      <Grettings className="card-user" lang="de">Ludwig</Grettings>
       <Grettings lang="fr">François</Grettings>
       <Grettings lang="es">Carlos</Grettings>
       <Grettings lang="en">Jhon</Grettings>
+
+      <p>Random value between 1 and 6 <Random min={1} max={6} /></p>
+      <p>Random value between 1 and 6 <Random min={1} max={100} /></p>
     </div>
   );
 }
