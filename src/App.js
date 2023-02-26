@@ -1,5 +1,6 @@
 import IdCard from './components/IdCard';
 import './App.css';
+import Grettings from './components/Greetings';
 
 const userIdCard = [
   {
@@ -29,6 +30,11 @@ function App() {
           <IdCard key={i} user={elem} />
         )
       })}
+
+      <Grettings lang="de">Ludwig</Grettings>
+      <Grettings lang="fr">François</Grettings>
+      <Grettings lang="es">Carlos</Grettings>
+      <Grettings lang="en">Jhon</Grettings>
     </div>
   );
 }
