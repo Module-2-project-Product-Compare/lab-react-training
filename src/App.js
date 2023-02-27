@@ -2,6 +2,9 @@ import IdCard from './components/IdCard';
 import './App.css';
 import Grettings from './components/Greetings';
 import Random from './components/Random';
+import BoxColor from './components/BoxColor';
+import CreditCard from './components/CreditCard';
+import creditCardData from './creditCardData.json'
 
 const userIdCard = [
   {
@@ -25,7 +28,6 @@ const userIdCard = [
 function App() {
   return (
     <div className="App">
-      <h1>User profile</h1>
       {userIdCard.map((elem, i) => {
         return (
           <IdCard key={i} user={elem} />
@@ -39,6 +41,18 @@ function App() {
 
       <p>Random value between 1 and 6 <Random min={1} max={6} /></p>
       <p>Random value between 1 and 6 <Random min={1} max={100} /></p>
+
+      <BoxColor r={255} g={0} b={0} ></BoxColor>
+      <BoxColor r={128} g={255} b={0} ></BoxColor>
+
+      <section className="credit-card-container">
+      {creditCardData.map((elem, i) => {
+        return (
+          <CreditCard key={i} info={elem} />
+        )
+      })}
+      </section>
+      
     </div>
   );
 }
