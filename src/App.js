@@ -9,6 +9,7 @@ import Rating from './components/Rating';
 import driverData from './driverData.json';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import Dice from './components/Dice';
 
 const userIdCard = [
   {
@@ -72,6 +73,9 @@ function App() {
         })}
       </section>
       <LikeButton />
+
+      <Dice />
+
     </div>
   );
 }

@@ -4,7 +4,7 @@ function LikeButton() {
   const [like, setLike] = useState(0);
 
   const handleIncrease = () => {
-    setLike((prev) => prev + 1);
+    setLike(prev => prev + 1);
   };
 
   return (

@@ -129,3 +129,14 @@ section {
   border: none;
   border-radius: 2vh;
 }
+
+/*Dice*/
+
+.img-dice {
+  width: 200px;
+  height: 200px;
+  margin-top: 5vh;
+}
+
+
+
