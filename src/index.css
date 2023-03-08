@@ -118,3 +118,14 @@ section {
   border-radius: 50%;
   object-fit: cover;
 }
+
+/*Button like*/
+
+.like-button {
+  background-color: #455eb5;
+  color: white;
+  width: 10vh;
+  height: 2vh;
+  border: none;
+  border-radius: 2vh;
+}

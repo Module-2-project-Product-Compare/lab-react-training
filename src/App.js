@@ -8,6 +8,7 @@ import creditCardData from './creditCardData.json';
 import Rating from './components/Rating';
 import driverData from './driverData.json';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 const userIdCard = [
   {
@@ -70,6 +71,7 @@ function App() {
           return <DriverCard key={i} info={elem} />;
         })}
       </section>
+      <LikeButton />
     </div>
   );
 }
